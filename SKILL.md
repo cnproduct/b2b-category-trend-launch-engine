@@ -14,10 +14,11 @@ description: 全生命周期跨品类出海爆款趋势雷达、多源电商逆�
 3. **B2B 商业包装与落地页生成**：严格遵循 **Global Clean URLs Standard (Zero `.html` Policy)**，生成内嵌 Schema.org 知识图谱、MA-DPP 数字产品护照及阶梯批发报价的高转化响应式页面。
 4. **多服务器生产级部署**：通过 Paramiko SSH/SFTP 执行毫秒级多站热插拔发布，同步注入产品目录网格并增量更新 XML 网站地图。
 5. **Google Search Console 极速收录**：调用 Ego Lite 自动化提交 Sitemap，通过顶部检查栏触发 live URL 测试并一键点击 **`REQUEST INDEXING`**。
+6. **全生命周期 Master 总控联动**：按需激活 [`b2b-export-site-super-orchestrator`](https://github.com/cnproduct/b2b-export-site-super-orchestrator)，推进 MA-DPP 欧盟护照合规（Stage 5）、60 天社媒分发飞轮（Stage 8）、整站健康巡检与 GSC 站群未收录自动化排障。
 
 ---
 
-## 🏗️ 核心架构与五大阶段 (The 5-Phase Workflow)
+## 🏗️ 核心架构与六大阶段 (The 6-Phase Workflow)
 
 ```mermaid
 flowchart TD
@@ -25,6 +26,7 @@ flowchart TD
     B --> C["Phase 3: B2B Commercial Engineering<br/>(Clean URLs, Schema.org, MA-DPP, FOB)"]
     C --> D["Phase 4: Remote Production Deploy<br/>(Multi-Server Sync, Sitemap, Catalog Grid)"]
     D --> E["Phase 5: GSC Automated Indexing<br/>(Sitemap Submit, Inspect, Request Indexing)"]
+    E -.->|按需激活总控| F["Phase 6: Super Orchestrator Bridge<br/>(MA-DPP Stage 5 + Social Flywheel Stage 8)"]
 ```
 
 ---
@@ -111,6 +113,46 @@ ego-browser nodejs scripts/gsc_indexer.js \
 - **Sitemap 提交**：自动填入 `sitemap-products.xml` 并点击 Submit。
 - **顶部检查栏直达**：输入全新 Clean URL 回车。
 - **极速收录申请**：识别并点击 **`REQUEST INDEXING`**，捕获存证截图。
+
+---
+
+## 🏛️ Phase 6: Super Orchestrator 联动与按需激活 (Master Handover)
+
+本技能与出海独立站全生命周期 Master 总控 **[`b2b-export-site-super-orchestrator`](https://github.com/cnproduct/b2b-export-site-super-orchestrator)** 深度集成，形成 **“战术拓品突击队 (Trend Launch Engine) ⟷ 战略总控指挥中心 (Super Orchestrator)”** 的双引擎分层协同架构。
+
+通过内置 Bridge 脚本 [`scripts/super_orchestrator_bridge.py`](file:///Users/happy/Library/CloudStorage/GoogleDrive-cnproduct@gmail.com/我的云端硬盘/WPS同步盘/耐科AI创新小组/naikewebistes/b2b-category-trend-launch-engine/scripts/super_orchestrator_bridge.py)，在需要更深度的全站治理时无缝激活 Master 总控：
+
+### 1. 检查总控系统就绪状态与子引擎版本
+```bash
+python3 scripts/super_orchestrator_bridge.py status
+```
+
+### 2. 触发 28 站群全景健康体检 (Fleet Site Audit)
+新品上架后，快速对目标独立站或全站群进行 HTTPS、Sitemap、Clean URLs、Canonical 及响应延迟全量巡检：
+```bash
+python3 scripts/super_orchestrator_bridge.py audit --domain "wishtimetoys.com"
+```
+
+### 3. 激活 MA-DPP 欧盟数字产品护照与 60 天社媒增长飞轮
+将新挖掘上架的爆款商品无缝移交至 Stage 5（欧盟 ESPR 2024/1781 & ISO 15459 Node 100015 护照编译）与 Stage 8（LinkedIn + Facebook + Reddit 三平台 60 天图文/资讯排期）：
+```bash
+python3 scripts/super_orchestrator_bridge.py dpp \
+  --domain "wishtimetoys.com" \
+  --industry "toys" \
+  --mode "full" \
+  --days 60
+```
+
+### 4. 触发站群级 Google Search Console 6 大未收录原因自动修复
+当需要批量排查 `Discovered - currently not indexed` 或 `Crawled - currently not indexed` 时：
+```bash
+python3 scripts/super_orchestrator_bridge.py gsc-fleet --domains "wishtimetoys.com,customlunchboxfactory.com"
+```
+
+### 5. 注入 WAI-ARIA 响应式 GEO & SEO 面包屑导航与 BreadcrumbList Schema
+```bash
+python3 scripts/super_orchestrator_bridge.py breadcrumbs --path "./dist/products"
+```
 
 ---
 

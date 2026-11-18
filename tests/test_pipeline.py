@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(base_dir, 'scripts'))
 
 from page_generator import generate_product_page
 from clean_url_auditor import audit_clean_urls
+from super_orchestrator_bridge import SuperOrchestratorBridge
 
 class TestCategoryEngine(unittest.TestCase):
     def setUp(self):
@@ -58,6 +59,13 @@ class TestCategoryEngine(unittest.TestCase):
         # Audit generated page with Clean URL auditor
         passed = audit_clean_urls(self.test_dist)
         self.assertTrue(passed, "Clean URL Auditor failed on generated output!")
+
+    def test_super_orchestrator_bridge(self):
+        bridge = SuperOrchestratorBridge()
+        status = bridge.get_status()
+        self.assertTrue(status.get("available"), "Super Orchestrator should be available and resolvable")
+        self.assertIn("subsystems", status)
+        self.assertIn("ma_dpp_passport_engine", status["subsystems"])
 
 if __name__ == '__main__':
     unittest.main()

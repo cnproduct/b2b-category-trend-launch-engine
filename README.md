@@ -21,7 +21,7 @@ Traditional B2B cross-border e-commerce and factory exports suffer from:
 
 ---
 
-## 🏗️ Architecture & 5-Phase Universal Workflow
+## 🏗️ Architecture & 6-Phase Dual-Engine Workflow
 
 ```mermaid
 flowchart LR
@@ -29,6 +29,7 @@ flowchart LR
     B --> C["⚙️ Phase 3<br/>B2B Page Engineering<br/>(Clean URLs & MA-DPP)"]
     C --> D["🚀 Phase 4<br/>Production Deployer<br/>(SSH/SFTP & Sitemaps)"]
     D --> E["📡 Phase 5<br/>GSC Indexing<br/>(Live Request via Ego Lite)"]
+    E -.->|On-Demand Handover| F["🏛️ Phase 6<br/>Super Orchestrator<br/>(MA-DPP & Social Flywheel)"]
 ```
 
 ---
@@ -87,6 +88,22 @@ ego-browser nodejs scripts/gsc_indexer.js \
   --resourceId "sc-domain:wishtimetoys.com" \
   --url "https://example.com/products/collectible-figures-bag-charms" \
   --sitemap "sitemap-products.xml"
+```
+
+### 6. Phase 6: Handover to Super Orchestrator (On-Demand Activation)
+Seamlessly activate **[`b2b-export-site-super-orchestrator`](https://github.com/cnproduct/b2b-export-site-super-orchestrator)** for whole-site lifecycle governance, MA-DPP EU digital product passports (Stage 5), and 60-day social media growth flywheels (Stage 8):
+```bash
+# Check Super Orchestrator availability & subsystems
+python3 scripts/super_orchestrator_bridge.py status
+
+# Run comprehensive 28-site fleet health audit
+python3 scripts/super_orchestrator_bridge.py audit --domain "wishtimetoys.com"
+
+# Activate MA-DPP EU passport compliance + 60-Day Tri-Platform Social Flywheel
+python3 scripts/super_orchestrator_bridge.py dpp --domain "wishtimetoys.com" --industry "toys" --mode full
+
+# Run fleet-wide Google Search Console automated 6-cause remediation
+python3 scripts/super_orchestrator_bridge.py gsc-fleet --domains "wishtimetoys.com,customlunchboxfactory.com"
 ```
 
 ---
