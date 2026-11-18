@@ -22,20 +22,24 @@ import subprocess
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 
-# Candidate resolution paths for b2b-export-site-super-orchestrator
-CANDIDATE_PATHS = [
-    Path(os.environ.get("SUPER_ORCHESTRATOR_PATH", "")),
-    Path.home() / ".gemini" / "config" / "skills" / "b2b-export-site-super-orchestrator",
-    Path("/Users/happy/Library/CloudStorage/GoogleDrive-cnproduct@gmail.com/我的云端硬盘/WPS同步盘/耐科AI创新小组/naikewebistes/b2b-export-site-super-orchestrator"),
-    Path(__file__).resolve().parent.parent.parent / "b2b-export-site-super-orchestrator"
-]
-
-
 def resolve_super_orchestrator() -> Optional[Path]:
     """Finds the installed b2b-export-site-super-orchestrator root directory."""
-    for path in CANDIDATE_PATHS:
-        if path and path.exists() and (path / "SKILL.md").exists():
-            return path.resolve()
+    candidates = []
+    env_path = os.environ.get("SUPER_ORCHESTRATOR_PATH", "").strip()
+    if env_path:
+        candidates.append(Path(env_path))
+    candidates.extend([
+        Path.home() / ".gemini" / "config" / "skills" / "b2b-export-site-super-orchestrator",
+        Path("/Users/happy/Library/CloudStorage/GoogleDrive-cnproduct@gmail.com/我的云端硬盘/WPS同步盘/耐科AI创新小组/naikewebistes/b2b-export-site-super-orchestrator"),
+        Path(__file__).resolve().parent.parent.parent / "b2b-export-site-super-orchestrator"
+    ])
+    for path in candidates:
+        if path.exists() and (path / "SKILL.md").exists():
+            # Ensure it is actually the super orchestrator
+            with open(path / "SKILL.md", "r", encoding="utf-8") as f:
+                content = f.read(500)
+                if "b2b-export-site-super-orchestrator" in content:
+                    return path.resolve()
     return None
 
 
@@ -97,11 +101,13 @@ class SuperOrchestratorBridge:
             print(f"❌ [Bridge Error] Script missing: {script}")
             return 1
 
-        print(f"🌐 [Super Orchestrator Bridge] Executing fleet audit (Target: {target_domain or 'All 28 Fleet Sites'})...")
+        print(f"🌐 [Super Orchestrator Bridge] Executing fleet audit (Target: {target_domain or 'All Fleet Sites'})...")
         cmd = [sys.executable, str(script)]
+        if target_domain:
+            cmd.extend(["--domains", target_domain])
         return subprocess.run(cmd).returncode
 
-    def run_dpp_flywheel(self, domain: str, industry: str = "general", days: int = 60, mode: str = "full") -> int:
+    def run_dpp_flywheel(self, domain: str, industry: str = "general", days: int = 60, mode: str = "full", project: Optional[str] = None) -> int:
         """
         Activates MA-DPP EU Digital Product Passport & 60-Day Tri-Platform Social Flywheel.
         Modes: passport, social, full, status
@@ -114,13 +120,17 @@ class SuperOrchestratorBridge:
             print(f"❌ [Bridge Error] Script missing: {script}")
             return 1
 
+        target_project = project or str(Path(__file__).resolve().parent.parent / "projects" / domain)
+        os.makedirs(target_project, exist_ok=True)
+
         print(f"🛡️ [Super Orchestrator Bridge] Activating MA-DPP Subsystem (Mode: {mode}, Domain: {domain}, Days: {days})...")
         cmd = [
             sys.executable, str(script),
             "--mode", mode,
             "--domain", domain,
             "--industry", industry,
-            "--days", str(days)
+            "--days", str(days),
+            "--project", target_project
         ]
         return subprocess.run(cmd).returncode
 
@@ -134,11 +144,20 @@ class SuperOrchestratorBridge:
             print(f"❌ [Bridge Error] Script missing: {script}")
             return 1
 
-        print(f"🔍 [Super Orchestrator Bridge] Invoking Fleet GSC Operator via Ego Lite...")
-        cmd = ["node", str(script)]
+        print(f"🔍 [Super Orchestrator Bridge] Invoking Fleet GSC Operator via Ego Lite (Target: {','.join(target_domains) if target_domains else 'All Fleet'})...")
+        with open(script, "r", encoding="utf-8") as f:
+            script_content = f.read()
+
+        if script_content.startswith("#!"):
+            lines = script_content.splitlines(keepends=True)
+            script_content = "".join(lines[1:])
+
         if target_domains:
-            cmd.extend(["--domains", ",".join(target_domains)])
-        return subprocess.run(cmd).returncode
+            injected_header = f"const INJECTED_DOMAINS = {json.dumps(target_domains)};\n"
+            script_content = injected_header + script_content
+
+        cmd = ["ego-browser", "nodejs"]
+        return subprocess.run(cmd, input=script_content, text=True).returncode
 
     def run_breadcrumb_injection(self, target_file_or_dir: str) -> int:
         """Injects WAI-ARIA breadcrumbs and BreadcrumbList JSON-LD into target HTML files."""
