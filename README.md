@@ -106,6 +106,17 @@ python3 scripts/super_orchestrator_bridge.py dpp --domain "wishtimetoys.com" --i
 python3 scripts/super_orchestrator_bridge.py gsc-fleet --domains "wishtimetoys.com,customlunchboxfactory.com"
 ```
 
+### 7. Phase 7: Organic Reorder & Natural Repurchase Acceleration
+Drive continuous repeat orders and high-margin replenishment across all 36 sites by turning one-off buyers into long-term procurement partners:
+```bash
+# Run fleet reorder blueprint generator
+python3 scripts/reorder_engine.py
+```
+- **Returning Buyer Fast Reorder Portal**: Embedded 1-click PO/Batch ID reorder module with 0 tooling fee and 10–14 day expedited production.
+- **Consumables & Wear Accessories Saturation**: Continuous 30–60 day restocking of high-wear accessories (silicone gaskets, diamond saw blades, orthotic insoles, blind box refills).
+- **MA-DPP Scan-to-Reorder**: Direct QR code scan from outer shipping cartons into `/dpp/{sku}#reorder`.
+- **30-60-90 Day Procurement Nurture Cadence**: Automated seasonal capacity booking and container lock notifications.
+
 ---
 
 ## 🌐 The Zero `.html` Policy (Clean URLs Standard)

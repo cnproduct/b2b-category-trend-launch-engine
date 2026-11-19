@@ -12,7 +12,10 @@
       "typical_fob_range": "$0.45 - $2.50 / pc",
       "lead_time": "Ready-to-ship: 3–5 days; OEM custom run: 15–20 days",
       "packaging_options": ["Blind Foil Mystery Bag", "Color Window Box", "Display PDQ Tray", "Blister Card"],
-      "target_buyers": ["Toy Importers", "Supermarket Chains", "Fast-Food Brands", "Amazon & TikTok Shop Sellers", "Theme Parks"]
+      "target_buyers": ["Toy Importers", "Supermarket Chains", "Fast-Food Brands", "Amazon & TikTok Shop Sellers", "Theme Parks"],
+      "reorder_cycle": "30–45 Days (Quarterly seasonal releases & trending blind box replenishment)",
+      "reorder_incentives": "Zero New Mold Cost on Existing Shapes, 10-Day Rapid Repeat Run, Batch Color Consistency Guarantee",
+      "consumable_parts": ["Blind Bag Assortment Refills", "Replacement Clip Hooks & Bag Charms", "Custom PDQ Display Trays", "Seasonal Themed Accessories"]
     },
     "shoes": {
       "name": "Footwear & Shoes",
@@ -26,7 +29,10 @@
       "typical_fob_range": "$8.50 - $24.00 / pair",
       "lead_time": "Sample: 5–7 days; Container order: 25–35 days",
       "packaging_options": ["Recyclable Kraft Shoe Box", "Polybag with Euro-hangtag", "Master Shipping Carton"],
-      "target_buyers": ["Industrial Safety Equipment Wholesalers", "Outdoor Brand Importers", "Footwear Retail Chains"]
+      "target_buyers": ["Industrial Safety Equipment Wholesalers", "Outdoor Brand Importers", "Footwear Retail Chains"],
+      "reorder_cycle": "60–90 Days (Corporate uniform replenishment & seasonal workwear restocking)",
+      "reorder_incentives": "Free Custom Logo Embossing on Reorders, 15-Day Fast Production Lane, Annual Volume Rebate -5%",
+      "consumable_parts": ["Orthopedic Anti-Fatigue Insoles", "High-Abrasion Anti-Slip Outsole Blocks", "Flame-Retardant Kevlar Laces", "Replacement Waterproof Tongue Liners"]
     },
     "garments": {
       "name": "Garments & Apparel",
@@ -40,7 +46,10 @@
       "typical_fob_range": "$4.50 - $18.00 / pc",
       "lead_time": "Lab dip & Sample: 3–5 days; Mass production: 15–20 days",
       "packaging_options": ["Biodegradable Frosted Zipper Bag", "Custom Hangtag & Barcode", "Flat Pack Master Carton"],
-      "target_buyers": ["Boutique Gym & Fitness Brands", "E-Commerce Apparel Retailers", "Corporate Uniform Procurement"]
+      "target_buyers": ["Boutique Gym & Fitness Brands", "E-Commerce Apparel Retailers", "Corporate Uniform Procurement"],
+      "reorder_cycle": "30–60 Days (Seasonal colorway drops & evergreen inventory restock)",
+      "reorder_incentives": "Zero Screen-Printing Setup Fee, Reserved Dye-Lot Consistency, Priority Fabric Inventory Lock",
+      "consumable_parts": ["Branded Silicone Heat-Transfer Badges", "Custom Drawstrings & Metal Aglets", "Zipper Pull Replacements", "Eco Frosted Packaging Bags"]
     },
     "lunch box": {
       "name": "Lunch Box & Bento Tableware",
@@ -54,7 +63,10 @@
       "typical_fob_range": "$2.20 - $12.50 / pc",
       "lead_time": "Stock: 3–5 days; Custom logo & packaging: 15–20 days",
       "packaging_options": ["Color Window Gift Box", "Kraft Mailer Box", "Display Carton"],
-      "target_buyers": ["Department Store Kitchenware Buyers", "School & Office Sourcing Agents", "Promotional Gift Importers"]
+      "target_buyers": ["Department Store Kitchenware Buyers", "School & Office Sourcing Agents", "Promotional Gift Importers"],
+      "reorder_cycle": "45–60 Days (Back-to-school surges, quarterly corporate gifting & food delivery refills)",
+      "reorder_incentives": "Zero Tooling Fee for Established Sizes, 12-Day Production Guarantee, Free Laser Logo Engraving",
+      "consumable_parts": ["Food-Grade Silicone Replacement Seals", "Modular Leakproof Divider Trays", "Cutlery Straps & Portable Utensil Sets", "Thermal Ice Pack Inserts"]
     },
     "stone machine": {
       "name": "Stone Machinery & Industrial Equipment",
@@ -68,7 +80,10 @@
       "typical_fob_range": "$8,500 - $45,000 / set",
       "lead_time": "Standard stock: 10–15 days; Custom automated line: 30–45 days",
       "packaging_options": ["Export Seaworthy Wooden Crate", "Container Steel Wire Lashing & Anti-Rust Film"],
-      "target_buyers": ["Countertop Fabricators", "Quarry & Granite Processing Plants", "Stone Processing Machinery Distributors"]
+      "target_buyers": ["Countertop Fabricators", "Quarry & Granite Processing Plants", "Stone Processing Machinery Distributors"],
+      "reorder_cycle": "45–90 Days for diamond consumables; 12–18 months for machine fleet expansion",
+      "reorder_incentives": "VIP Fast Spare Parts Dispatch (Air express within 48h), Machine Fleet Multi-Unit Discount -8%, Lifetime Remote CAD/CAM Support",
+      "consumable_parts": ["Diamond Saw Blades (Granite/Marble/Quartz)", "Quarry Diamond Wire Beads", "Edge Polishing Abrasive Bricks", "CNC Milling Tool Bits & Suction Cups"]
     },
     "hygiene": {
       "name": "Hygiene & Nonwoven Products",
@@ -82,7 +97,10 @@
       "typical_fob_range": "$0.045 - $0.18 / pc",
       "lead_time": "First OEM order: 25–30 days; Repeat container: 15–20 days",
       "packaging_options": ["Polybag with Handle", "Printed Master Carton", "Custom Retail Bale Packaging"],
-      "target_buyers": ["National Supermarket Private Labels", "Maternal & Infant Distributors", "Hospital & Care Home Suppliers"]
+      "target_buyers": ["National Supermarket Private Labels", "Maternal & Infant Distributors", "Hospital & Care Home Suppliers"],
+      "reorder_cycle": "30 Days (Predictable monthly recurring container replenishment)",
+      "reorder_incentives": "Priority Raw Material Allocation (Sumitomo SAP Reserve), Scheduled Rolling Production Slots, 15-Day Turnaround on Regular Specs",
+      "consumable_parts": ["Printed Frontal Tape Rolls", "Elastic Ear Tabs", "Hot Melt Adhesive Glue", "Spunbond Top-Sheet Master Rolls"]
     },
     "bathware": {
       "name": "Bathware, Valves & Plumbing",
@@ -96,7 +114,44 @@
       "typical_fob_range": "$3.50 - $48.00 / pc",
       "lead_time": "Tooling: 20 days; Production: 25–30 days",
       "packaging_options": ["Drop-Test Approved Foam Box", "High-End Color Gift Box", "Export Master Carton"],
-      "target_buyers": ["Plumbing Wholesalers", "Home Depot / Lowe's Vendors", "Commercial Project Contractors"]
+      "target_buyers": ["Plumbing Wholesalers", "Home Depot / Lowe's Vendors", "Commercial Project Contractors"],
+      "reorder_cycle": "60–90 Days (Plumbing repair consumables & residential development project phases)",
+      "reorder_incentives": "Zero Core Tooling Charge on Standard Bodies, Guaranteed Salt-Spray Test Quality (24h/48h CASS), Free Replacement Gasket Kits",
+      "consumable_parts": ["Sedal Ceramic Valve Cartridges", "Neoperl Flow Restrictor Aerators", "EPDM High-Pressure Flexible Hoses", "Viton O-Ring Sealing Sets"]
+    },
+    "semiconductor": {
+      "name": "Semiconductors & Electronic Components",
+      "keywords": [
+        "semiconductor", "rs485 transceiver", "analog chip", "operational amplifier",
+        "gate driver", "isolated dc dc", "industrial ic", "power management ic"
+      ],
+      "certifications": ["AEC-Q100 (Automotive Grade)", "ISO 9001:2015", "RoHS & REACH Compliant", "ESD HBM 8kV / IEC 61000-4-2"],
+      "materials": ["EPI Pure Silicon Wafers", "Leadframe Copper Alloy", "Halogen-Free Epoxy Molding Compound"],
+      "default_moq": "3,000 pcs (Tape & Reel Packing)",
+      "typical_fob_range": "$0.15 - $2.80 / pc",
+      "lead_time": "Standard inventory: 3–5 days; Fab wafer run: 6–8 weeks",
+      "packaging_options": ["Standard EIA-481 Tape & Reel", "Moisture Barrier Antistatic Bag", "Dessicant + HIC Card"],
+      "target_buyers": ["Industrial Automation EMS Manufacturers", "Smart Metering & Grid Contractors", "Automotive Tier 1 Suppliers"],
+      "reorder_cycle": "60–90 Days (BOM scheduled factory replenishment & safety stock buffering)",
+      "reorder_incentives": "Long-Term Price Lock Guarantee (12 Months), Wafer Die Buffer Allocation, Drop-In Replacement Cross-Reference Pin-to-Pin Support",
+      "consumable_parts": ["Evaluation Demo Kits & PCB Adapters", "Drop-in Pin-Compatible Alternates", "Calibration Samples", "High-Reliability Test Sockets"]
+    },
+    "energy_storage": {
+      "name": "Commercial & Industrial BESS Energy Storage",
+      "keywords": [
+        "energy storage", "bess", "commercial energy storage", "liquid cooled bess",
+        "battery passport", "c&i energy storage", "outdoor battery cabinet"
+      ],
+      "certifications": ["EU Battery Regulation 2023/1542", "UL 9540 / UL 9540A", "IEC 62619", "UN 38.3", "CE LVD/EMC"],
+      "materials": ["Grade-A LiFePO4 280Ah/314Ah Prismatic Cells", "Liquid Cooling Thermal Loop", "IP55 Outdoor Corrosion-Resistant C5-M Enclosure"],
+      "default_moq": "1 unit / 215kWh (FOB Xiamen / Shanghai)",
+      "typical_fob_range": "$22,000 - $68,000 / unit",
+      "lead_time": "Production & Testing: 30–40 days",
+      "packaging_options": ["Heavy-Duty Steel Skid Crate with Desiccant & Shock Sensor"],
+      "target_buyers": ["EPC Project Developers", "Renewable Energy Contractors", "Microgrid System Integrators"],
+      "reorder_cycle": "Quarterly Expansion Phases (Substation modular cluster scale-up)",
+      "reorder_incentives": "Tiered Cluster System Discount (-6%), Free Remote SCADA Integration & Commissioning Support, 10-Year Capacity Retention Warranty",
+      "consumable_parts": ["Glycol Liquid Coolant Refill Cartridges", "Aerosol Fire Suppression Canisters", "High-Voltage DC Fuses", "Auxiliary Filter Pads & Dehumidifier Core"]
     }
   }
 }

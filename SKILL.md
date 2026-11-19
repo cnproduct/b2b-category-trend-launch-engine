@@ -156,6 +156,35 @@ python3 scripts/super_orchestrator_bridge.py breadcrumbs --path "./dist/products
 
 ---
 
+## 🔄 Phase 7: 自然复购与长青翻单加速机制 (Organic Reorder & Replenishment Engine)
+
+> **核心法则**：*“对所有出海独立站使用好了，自然就会复购。”*  
+> 独立站的核心商业价值不仅在于首单获客，更在于构建**海外大买家高粘性、零摩擦的自然翻单与补货履约闭环**。
+
+### 1. 运行 36 站群自然复购加速引擎
+生成涵盖全站群的复购周期分析、高频消耗配件矩阵与采购召回日历：
+```bash
+python3 scripts/reorder_engine.py
+```
+- **输出蓝图**：
+  - JSON 数据：`reports/fleet_reorder_blueprint.json`
+  - 交付报告：`reports/fleet_reorder_blueprint.md`
+
+### 2. 四大自然复购支柱规范
+1. **老买家极速翻单通道 (Returning Buyer Fast Reorder Lane)**：
+   - 落地页标配专属翻单卡片：老客户输入旧 PO# 或 MA-DPP 编码，系统自动拉取历史模具图纸与色号；
+   - 承诺 **0 重新开模费**，保障 **10–14 天急速排产**与阶梯返点（3%–8%）。
+2. **高频消耗配件矩阵 (Consumables Saturation)**：
+   - 便当盒（硅胶密封圈/分隔内胆）、石材机械（金刚石锯片/吸盘胶垫）、鞋靴（减震鞋垫/耐磨大底）、玩具（盲盒当季替换包/快销配件）、卫生用品（纸尿裤定期整柜返单）。
+3. **MA-DPP 数字产品护照翻单入口**：
+   - 外箱印刷二维码，仓管/采购手机扫码直达 `/dpp/{sku}#reorder`，杜绝客户流失。
+4. **30-60-90 天自动化采购周期召回**：
+   - 第 30 天：质检满意度与耗材补给关怀；
+   - 第 60 天：海运船期与旺季排产柜位预警锁单；
+   - 第 90 天：季度翻单返利与专用模具保留确认。
+
+---
+
 ## 🛡️ 质量审计闸门 (Quality Gate)
 
 在交付任何页面前，必须运行无后缀路由扫描审计器：

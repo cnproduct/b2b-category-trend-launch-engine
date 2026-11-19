@@ -1,0 +1,783 @@
+{
+  "timestamp": "2026-11-19T15:56:06.565768+00:00",
+  "total_sites": 36,
+  "theme": "B2B Organic Reorder & Natural Repurchase Architecture (使用好了，自然就会复购)",
+  "core_principles": [
+    "1. 极速翻单零摩擦 (Fast Reorder 1-Click PO): 0 Tooling fee, 10-14 days turnaround",
+    "2. 耗材与易损配件饱和曝光 (Consumables Saturation): 30-60-90天高频消耗品矩阵",
+    "3. MA-DPP 溯源护照翻单入口 (Passport Reorder Gateway): 扫包装二维码一键直达翻单",
+    "4. 自动化补货召回飞轮 (Automated Nurture Cadence): 采购周期节点精准触达"
+  ],
+  "sites": [
+    {
+      "domain": "cosinechips.com",
+      "name": "科山芯创",
+      "industry": "semiconductor",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Factory BOM Scheduled Replenishment & Buffer Stock Release",
+      "key_consumables_matrix": [
+        "Pin-Compatible Alternates",
+        "Evaluation Demo Boards",
+        "Burn-in Test Sockets",
+        "Surface-Mount Tape & Reel Pack Refills"
+      ],
+      "returning_buyer_incentives": "12-Month Contract Price-Lock, Wafer Buffer Reservation, 48-Hour Sample Cross-Reference Turnaround",
+      "repeat_discount_policy": "Tiered volume rebate up to 10% on scheduled blanket purchase orders",
+      "dpp_reorder_url": "https://www.cosinechips.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 科山芯创 (cosinechips.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "fosslubricants.com",
+      "name": "福斯润滑油",
+      "industry": "lubricants",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.fosslubricants.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 福斯润滑油 (fosslubricants.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "tianyalimestone.com",
+      "name": "天涯文化石",
+      "industry": "stone",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Commercial Architectural Project Phasing & Landscape Paver Reorders",
+      "key_consumables_matrix": [
+        "Matching Quarry Batch Paver Bundles",
+        "Coping Stones & Step Treads",
+        "Joint Grout & Anti-Stain Sealers"
+      ],
+      "returning_buyer_incentives": "Guaranteed Quarry Vein & Tone Color Match, Crate-Level Traceability, Free Replacement of Broken Tiles",
+      "repeat_discount_policy": "Free sea freight insurance + 4% rebate on repeat container bookings",
+      "dpp_reorder_url": "https://www.tianyalimestone.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 天涯文化石 (tianyalimestone.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "tianmaoshoefactory.com",
+      "name": "天茂鞋业",
+      "industry": "footwear",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.tianmaoshoefactory.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 天茂鞋业 (tianmaoshoefactory.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "dingmaoshoes.com",
+      "name": "鼎茂鞋业",
+      "industry": "footwear",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.dingmaoshoes.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 鼎茂鞋业 (dingmaoshoes.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewayfootwear.com",
+      "name": "威德威鞋业",
+      "industry": "tactical_boots",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly Military & Law Enforcement Uniform Contract Restocking",
+      "key_consumables_matrix": [
+        "Tactical Combat Insoles with Poron Cushioning",
+        "Nylon Fast-Lace Hardware Replacement Kits",
+        "Oil-Resistant Rubber Outsole Blocks"
+      ],
+      "returning_buyer_incentives": "Zero Die-Cutting Setup Fee, Guaranteed MIL-SPEC Standard Continuity, 14-Day Delivery",
+      "repeat_discount_policy": "Volume rebate ladder up to 7% for recurring defense contract supply",
+      "dpp_reorder_url": "https://www.widewayfootwear.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威鞋业 (widewayfootwear.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewaygroup.com",
+      "name": "威德威集团",
+      "industry": "conglomerate",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.widewaygroup.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威集团 (widewaygroup.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewaybags.com",
+      "name": "威德威箱包",
+      "industry": "tactical_gear",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Bimonthly Tactical Bags & Equipment Reorders",
+      "key_consumables_matrix": [
+        "MOLLE Quick-Release Buckles & D-Rings",
+        "Cordura Fabric Repair Patches",
+        "Custom Tactical Patch Badges"
+      ],
+      "returning_buyer_incentives": "Free Barcode & Hangtag Customization on Reorders, 15-Day Fast Ship",
+      "repeat_discount_policy": "Tiered reorder pricing starting at 200 pcs",
+      "dpp_reorder_url": "https://www.widewaybags.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威箱包 (widewaybags.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewaysportswear.com",
+      "name": "威德威服饰",
+      "industry": "sportswear",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Seasonal Athletic Capsule Drops & Fitness Gym Uniform Reorders",
+      "key_consumables_matrix": [
+        "Silicone Heat-Transfer Logo Badges",
+        "Custom Drawstrings & Metal Aglets",
+        "Replacement YKK Water-Resistant Zippers"
+      ],
+      "returning_buyer_incentives": "Zero Screen-Printing Setup Fee, Dye-Lot Match Guarantee, Priority Fabric Inventory Lock",
+      "repeat_discount_policy": "5% volume credit applied directly to next production invoice",
+      "dpp_reorder_url": "https://www.widewaysportswear.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威服饰 (widewaysportswear.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewaycorkfootwear.com",
+      "name": "威德威软木鞋",
+      "industry": "cork_footwear",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Seasonal Resort Drops & Spring/Summer Birkenstock-Style Restock",
+      "key_consumables_matrix": [
+        "Natural Cork Footbeds with Arch Support",
+        "Replacement EVA Outsole Sheets",
+        "Adjustable Metal Buckles & Straps"
+      ],
+      "returning_buyer_incentives": "Free Laser Engraving on Cork Footbed, 12-Day Production Lane, Mixed-Size Flexibility",
+      "repeat_discount_policy": "4% reorder incentive on repeat container loads",
+      "dpp_reorder_url": "https://www.widewaycorkfootwear.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威软木鞋 (widewaycorkfootwear.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "widewayfootballgear.com",
+      "name": "威德威足球装备",
+      "industry": "football_gear",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.widewayfootballgear.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 威德威足球装备 (widewayfootballgear.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "leohygiene.com",
+      "name": "利奥卫生用品",
+      "industry": "hygiene",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Rolling Container Replenishment (1x40HQ Recurring Orders)",
+      "key_consumables_matrix": [
+        "Sumitomo SAP Superabsorbent Polymer Cores",
+        "Ultra-Soft Air-Through Nonwoven Sheets",
+        "Elastic Ear Tabs & Frontal Tapes"
+      ],
+      "returning_buyer_incentives": "Pre-Allocated Monthly Production Slot, Raw Material Price-Lock, 15-Day Container Dispatch",
+      "repeat_discount_policy": "1.5% - 3.0% margin return on scheduled annual 12-container contracts",
+      "dpp_reorder_url": "https://www.leohygiene.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 利奥卫生用品 (leohygiene.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "shdhygiene.com",
+      "name": "盛鸿达卫生用品",
+      "industry": "hygiene",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Rolling Container Replenishment (1x40HQ Recurring Orders)",
+      "key_consumables_matrix": [
+        "Sumitomo SAP Superabsorbent Polymer Cores",
+        "Ultra-Soft Air-Through Nonwoven Sheets",
+        "Elastic Ear Tabs & Frontal Tapes"
+      ],
+      "returning_buyer_incentives": "Pre-Allocated Monthly Production Slot, Raw Material Price-Lock, 15-Day Container Dispatch",
+      "repeat_discount_policy": "1.5% - 3.0% margin return on scheduled annual 12-container contracts",
+      "dpp_reorder_url": "https://www.shdhygiene.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 盛鸿达卫生用品 (shdhygiene.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "chinabaronhygiene.com",
+      "name": "男爵卫生用品",
+      "industry": "hygiene",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Rolling Container Replenishment (1x40HQ Recurring Orders)",
+      "key_consumables_matrix": [
+        "Sumitomo SAP Superabsorbent Polymer Cores",
+        "Ultra-Soft Air-Through Nonwoven Sheets",
+        "Elastic Ear Tabs & Frontal Tapes"
+      ],
+      "returning_buyer_incentives": "Pre-Allocated Monthly Production Slot, Raw Material Price-Lock, 15-Day Container Dispatch",
+      "repeat_discount_policy": "1.5% - 3.0% margin return on scheduled annual 12-container contracts",
+      "dpp_reorder_url": "https://www.chinabaronhygiene.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 男爵卫生用品 (chinabaronhygiene.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "custombentofactory.com",
+      "name": "定制便当盒工厂",
+      "industry": "lunch_box",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Quarterly Gifting, Back-to-School & Office Catering Restock",
+      "key_consumables_matrix": [
+        "Food-Grade Silicone Replacement Gasket Rings",
+        "Modular Removable Divider Inserts",
+        "Cutlery Straps & Portable Utensils",
+        "Custom Insulated Cooler Bags"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee for Established Sizes, 12-Day Rapid Batch Run, Free Laser Logo Engraving",
+      "repeat_discount_policy": "5% discount on orders repeating within 60 days",
+      "dpp_reorder_url": "https://www.custombentofactory.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 定制便当盒工厂 (custombentofactory.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "customlunchboxfactory.com",
+      "name": "定制野餐包工厂",
+      "industry": "lunch_box",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Quarterly Gifting, Back-to-School & Office Catering Restock",
+      "key_consumables_matrix": [
+        "Food-Grade Silicone Replacement Gasket Rings",
+        "Modular Removable Divider Inserts",
+        "Cutlery Straps & Portable Utensils",
+        "Custom Insulated Cooler Bags"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee for Established Sizes, 12-Day Rapid Batch Run, Free Laser Logo Engraving",
+      "repeat_discount_policy": "5% discount on orders repeating within 60 days",
+      "dpp_reorder_url": "https://www.customlunchboxfactory.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 定制野餐包工厂 (customlunchboxfactory.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "bentoboxmanufacturer.com",
+      "name": "便当盒制造商",
+      "industry": "lunch_box",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Quarterly Gifting, Back-to-School & Office Catering Restock",
+      "key_consumables_matrix": [
+        "Food-Grade Silicone Replacement Gasket Rings",
+        "Modular Removable Divider Inserts",
+        "Cutlery Straps & Portable Utensils",
+        "Custom Insulated Cooler Bags"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee for Established Sizes, 12-Day Rapid Batch Run, Free Laser Logo Engraving",
+      "repeat_discount_policy": "5% discount on orders repeating within 60 days",
+      "dpp_reorder_url": "https://www.bentoboxmanufacturer.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 便当盒制造商 (bentoboxmanufacturer.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "eazylunch.com",
+      "name": "EazyLunch 餐厨",
+      "industry": "lunch_box",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Quarterly Gifting, Back-to-School & Office Catering Restock",
+      "key_consumables_matrix": [
+        "Food-Grade Silicone Replacement Gasket Rings",
+        "Modular Removable Divider Inserts",
+        "Cutlery Straps & Portable Utensils",
+        "Custom Insulated Cooler Bags"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee for Established Sizes, 12-Day Rapid Batch Run, Free Laser Logo Engraving",
+      "repeat_discount_policy": "5% discount on orders repeating within 60 days",
+      "dpp_reorder_url": "https://www.eazylunch.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for EazyLunch 餐厨 (eazylunch.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "wishtimetoys.com",
+      "name": "智趣玩具",
+      "industry": "toys",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Blind Box Replenishment & Seasonal Series Restock",
+      "key_consumables_matrix": [
+        "Blind Mystery Bags (Seasonal Assortments)",
+        "Replacement Bag Charm Hooks & Clips",
+        "Branded PDQ Display Counter Trays",
+        "Squeeze Sensory Refill Packs"
+      ],
+      "returning_buyer_incentives": "0 New Mold Cost on Existing Shapes, 10-Day Rapid Repeat Run, Batch Color Consistency Guarantee",
+      "repeat_discount_policy": "3% - 6% off base FOB for recurring monthly orders > 5,000 pcs",
+      "dpp_reorder_url": "https://www.wishtimetoys.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 智趣玩具 (wishtimetoys.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "earsoontoys.com",
+      "name": "耳顺益智玩具",
+      "industry": "toys",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Blind Box Replenishment & Seasonal Series Restock",
+      "key_consumables_matrix": [
+        "Blind Mystery Bags (Seasonal Assortments)",
+        "Replacement Bag Charm Hooks & Clips",
+        "Branded PDQ Display Counter Trays",
+        "Squeeze Sensory Refill Packs"
+      ],
+      "returning_buyer_incentives": "0 New Mold Cost on Existing Shapes, 10-Day Rapid Repeat Run, Batch Color Consistency Guarantee",
+      "repeat_discount_policy": "3% - 6% off base FOB for recurring monthly orders > 5,000 pcs",
+      "dpp_reorder_url": "https://www.earsoontoys.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 耳顺益智玩具 (earsoontoys.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "hanmuntoys.com",
+      "name": "汉门玩具",
+      "industry": "toys",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Blind Box Replenishment & Seasonal Series Restock",
+      "key_consumables_matrix": [
+        "Blind Mystery Bags (Seasonal Assortments)",
+        "Replacement Bag Charm Hooks & Clips",
+        "Branded PDQ Display Counter Trays",
+        "Squeeze Sensory Refill Packs"
+      ],
+      "returning_buyer_incentives": "0 New Mold Cost on Existing Shapes, 10-Day Rapid Repeat Run, Batch Color Consistency Guarantee",
+      "repeat_discount_policy": "3% - 6% off base FOB for recurring monthly orders > 5,000 pcs",
+      "dpp_reorder_url": "https://www.hanmuntoys.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 汉门玩具 (hanmuntoys.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "chengjitoy.com",
+      "name": "澄积玩具",
+      "industry": "toys",
+      "reorder_cycle_days": 30,
+      "procurement_cadence": "Monthly Blind Box Replenishment & Seasonal Series Restock",
+      "key_consumables_matrix": [
+        "Blind Mystery Bags (Seasonal Assortments)",
+        "Replacement Bag Charm Hooks & Clips",
+        "Branded PDQ Display Counter Trays",
+        "Squeeze Sensory Refill Packs"
+      ],
+      "returning_buyer_incentives": "0 New Mold Cost on Existing Shapes, 10-Day Rapid Repeat Run, Batch Color Consistency Guarantee",
+      "repeat_discount_policy": "3% - 6% off base FOB for recurring monthly orders > 5,000 pcs",
+      "dpp_reorder_url": "https://www.chengjitoy.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 澄积玩具 (chengjitoy.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "hlstonemachine.com",
+      "name": "华隆石材机械",
+      "industry": "stone_machinery",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "45-Day Diamond Consumables & 12-Month Fleet Machine Expansion",
+      "key_consumables_matrix": [
+        "Segmented Diamond Saw Blades (Granite/Marble/Quartz)",
+        "Quarry Diamond Wire Beads (Per Meter)",
+        "Resin Edge-Polishing Abrasives",
+        "CNC Vacuum Suction Pads"
+      ],
+      "returning_buyer_incentives": "VIP Air Express for Critical Spare Parts (Dispatch within 48h), Multi-Unit Expansion Discount -8%",
+      "repeat_discount_policy": "8% equipment credit on spare parts packages when upgrading machine fleet",
+      "dpp_reorder_url": "https://www.hlstonemachine.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 华隆石材机械 (hlstonemachine.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "shengdamachinery.com",
+      "name": "盛达石材机械",
+      "industry": "stone_machinery",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "45-Day Diamond Consumables & 12-Month Fleet Machine Expansion",
+      "key_consumables_matrix": [
+        "Segmented Diamond Saw Blades (Granite/Marble/Quartz)",
+        "Quarry Diamond Wire Beads (Per Meter)",
+        "Resin Edge-Polishing Abrasives",
+        "CNC Vacuum Suction Pads"
+      ],
+      "returning_buyer_incentives": "VIP Air Express for Critical Spare Parts (Dispatch within 48h), Multi-Unit Expansion Discount -8%",
+      "repeat_discount_policy": "8% equipment credit on spare parts packages when upgrading machine fleet",
+      "dpp_reorder_url": "https://www.shengdamachinery.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 盛达石材机械 (shengdamachinery.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "naiketableware.com",
+      "name": "耐客餐厨",
+      "industry": "tableware",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.naiketableware.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 耐客餐厨 (naiketableware.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "ghsafetyboots.com",
+      "name": "广汉安全鞋",
+      "industry": "safety_boots",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.ghsafetyboots.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 广汉安全鞋 (ghsafetyboots.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "huifengsanitary.com",
+      "name": "汇丰卫浴",
+      "industry": "bathware",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Plumbing Maintenance Supplies & Multi-Phase Hotel/Apartment Installs",
+      "key_consumables_matrix": [
+        "Sedal Ceramic Disc Cartridges",
+        "Neoperl Pressure-Compensating Aerators",
+        "Braided Stainless Supply Lines (EPDM)",
+        "Silicon Valve Washers"
+      ],
+      "returning_buyer_incentives": "Zero Core Casting Charge on Standard Shapes, 100% Pressure Test Pass Warranty, Free Gasket Kits",
+      "repeat_discount_policy": "Free replacement cartridge kit (1:20 ratio) included with all repeat wholesale orders",
+      "dpp_reorder_url": "https://www.huifengsanitary.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 汇丰卫浴 (huifengsanitary.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "rrenn.com",
+      "name": "人人易 AI",
+      "industry": "ai_platform",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.rrenn.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 人人易 AI (rrenn.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "earsoon.com",
+      "name": "开思云聚",
+      "industry": "enterprise_software",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.earsoon.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 开思云聚 (earsoon.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "jinyuanfire.com",
+      "name": "劲源消防",
+      "industry": "fire_safety",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.jinyuanfire.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 劲源消防 (jinyuanfire.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "meihuaumbrella.com",
+      "name": "梅花伞业",
+      "industry": "umbrella",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.meihuaumbrella.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 梅花伞业 (meihuaumbrella.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "sossenergy.com",
+      "name": "索森能源",
+      "industry": "energy_storage",
+      "reorder_cycle_days": 90,
+      "procurement_cadence": "Substation Cluster Scaling & Annual Maintenance Pack Procurement",
+      "key_consumables_matrix": [
+        "Liquid Coolant Refill Drums",
+        "Aerosol Fire Suppression Canister Replacements",
+        "High-Voltage DC Fuses (500A/1000V)",
+        "HVAC Intake Filters"
+      ],
+      "returning_buyer_incentives": "Free Cloud EMS Remote Upgrade, Priority Factory Acceptance Testing (FAT), Cluster Expansion Rebate -6%",
+      "repeat_discount_policy": "6% off expansion battery cabinets for existing operational sites",
+      "dpp_reorder_url": "https://www.sossenergy.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 索森能源 (sossenergy.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "titaniummfg.com",
+      "name": "钛豪制造",
+      "industry": "titanium",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "High-End Outdoor Lifestyle Drops & OEM Reorders",
+      "key_consumables_matrix": [
+        "Laser-Etched Titanium Cutlery Accessories",
+        "Ultralight Carabiner Clips",
+        "Silicone Insulating Grips & Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Laser-Marking Setup Fee, Guaranteed Grade-1 Pure Titanium Standard, 10-Day Small-Batch Run",
+      "repeat_discount_policy": "5% discount for verified repeat distributor accounts",
+      "dpp_reorder_url": "https://www.titaniummfg.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 钛豪制造 (titaniummfg.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "naikegifts.com",
+      "name": "耐客礼品",
+      "industry": "gifts",
+      "reorder_cycle_days": 45,
+      "procurement_cadence": "Quarterly Trade Show & Corporate Swag Restock",
+      "key_consumables_matrix": [
+        "Custom Lanyards & ID Badges",
+        "Branded Hard-Enamel Lapel Pins",
+        "Velvet Gift Pouches",
+        "Presentation Magnetic Boxes"
+      ],
+      "returning_buyer_incentives": "Mold Stored Free for 3 Years, 7-Day Rapid Reorder Production, Zero Artwork Setup Fee",
+      "repeat_discount_policy": "Free mold retention + 5% repeat discount on orders over $1,500",
+      "dpp_reorder_url": "https://www.naikegifts.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 耐客礼品 (naikegifts.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "naikeglobal.com",
+      "name": "耐客出海",
+      "industry": "global_trade",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.naikeglobal.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 耐客出海 (naikeglobal.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    },
+    {
+      "domain": "naikego.com",
+      "name": "耐客云聚",
+      "industry": "site_fleet",
+      "reorder_cycle_days": 60,
+      "procurement_cadence": "Quarterly General Industrial Sourcing Replenishment",
+      "key_consumables_matrix": [
+        "Replacement Wear Accessories",
+        "Maintenance Kits",
+        "Seasonal Packaging Sleeves"
+      ],
+      "returning_buyer_incentives": "Zero Tooling Fee on Repeat PO, Priority 14-Day Production Queue",
+      "repeat_discount_policy": "3% - 5% reorder discount on repeat orders",
+      "dpp_reorder_url": "https://www.naikego.com/ma-dpp#reorder",
+      "sample_reorder_subject": "[PO Restock Alert] Priority Replenishment Window for 耐客云聚 (naikego.com)",
+      "reorder_nurture_timing": {
+        "day_30": "QA Check-in & Consumables Inspection",
+        "day_60": "Container Booking & Lead-Time Forecast Alert",
+        "day_90": "Quarterly Rebate Lock & Mold Reservation Notice"
+      }
+    }
+  ]
+}
